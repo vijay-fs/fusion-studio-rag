@@ -8,12 +8,12 @@ const MAX_LIMIT = 20;
 export const searchFusionTables = tool({
   description:
     "Semantic search over the Oracle Fusion Cloud table catalog (22k tables and views across all modules). Use this FIRST when writing SQL, to find the correct tables for a business question. Returns table names, descriptions, modules, and primary keys.",
-  execute: async ({ query, limit, module }) => {
+  execute: async ({ query, limit, module, docSection }) => {
     try {
       const tables = await searchTables(
         query,
         Math.min(limit ?? DEFAULT_LIMIT, MAX_LIMIT),
-        module
+        { docSection, module }
       );
       return { tables };
     } catch (error) {
@@ -23,6 +23,12 @@ export const searchFusionTables = tool({
     }
   },
   inputSchema: z.object({
+    docSection: z
+      .string()
+      .optional()
+      .describe(
+        "Optional functional-area filter using a docSection value from listFusionDomains (e.g. 'order_management', 'receivables', 'global_payroll'). Prefer this over module for precise domain routing; only covers documented tables."
+      ),
     limit: z
       .number()
       .int()

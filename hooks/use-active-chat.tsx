@@ -9,6 +9,7 @@ import {
   type Dispatch,
   type ReactNode,
   type SetStateAction,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
@@ -45,6 +46,8 @@ type ActiveChatContextValue = {
   votes: Vote[] | undefined;
   currentModelId: string;
   setCurrentModelId: (id: string) => void;
+  schemaSearchEnabled: boolean;
+  setSchemaSearchEnabled: (enabled: boolean) => void;
   showCreditCardAlert: boolean;
   setShowCreditCardAlert: Dispatch<SetStateAction<boolean>>;
 };
@@ -78,6 +81,30 @@ export function ActiveChatProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     currentModelIdRef.current = currentModelId;
   }, [currentModelId]);
+
+  const [schemaSearchEnabled, setSchemaSearchEnabledState] = useState(true);
+  const schemaSearchRef = useRef(schemaSearchEnabled);
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("fusion-schema-search");
+      if (stored !== null) {
+        const enabled = stored !== "off";
+        setSchemaSearchEnabledState(enabled);
+        schemaSearchRef.current = enabled;
+      }
+    } catch {
+      /* storage unavailable */
+    }
+  }, []);
+  const setSchemaSearchEnabled = useCallback((enabled: boolean) => {
+    setSchemaSearchEnabledState(enabled);
+    schemaSearchRef.current = enabled;
+    try {
+      localStorage.setItem("fusion-schema-search", enabled ? "on" : "off");
+    } catch {
+      /* storage unavailable */
+    }
+  }, []);
 
   const [input, setInput] = useState("");
   const [showCreditCardAlert, setShowCreditCardAlert] = useState(false);
@@ -166,6 +193,7 @@ export function ActiveChatProvider({ children }: { children: ReactNode }) {
             ...(isToolApprovalContinuation
               ? { messages: request.messages }
               : { message: lastMessage }),
+            schemaSearchEnabled: schemaSearchRef.current,
             selectedChatModel: currentModelIdRef.current,
             selectedVisibilityType: visibility,
             ...request.body,
@@ -264,10 +292,12 @@ export function ActiveChatProvider({ children }: { children: ReactNode }) {
       isReadonly,
       messages,
       regenerate,
+      schemaSearchEnabled,
       sendMessage,
       setCurrentModelId,
       setInput,
       setMessages,
+      setSchemaSearchEnabled,
       setShowCreditCardAlert,
       showCreditCardAlert,
       status,
@@ -291,6 +321,8 @@ export function ActiveChatProvider({ children }: { children: ReactNode }) {
       isLoading,
       votes,
       currentModelId,
+      schemaSearchEnabled,
+      setSchemaSearchEnabled,
       showCreditCardAlert,
     ]
   );

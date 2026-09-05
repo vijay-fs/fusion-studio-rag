@@ -18,10 +18,7 @@ function getClient(): QdrantClient {
 }
 
 export function isSchemaSearchEnabled(): boolean {
-  return (
-    process.env.FUSION_SCHEMA_SEARCH !== "off" &&
-    Boolean(process.env.OPENAI_API_KEY)
-  );
+  return Boolean(process.env.OPENAI_API_KEY);
 }
 
 /**
@@ -59,27 +56,39 @@ export type FusionTableHit = {
   tableName: string;
   description: string | null;
   module: string | null;
+  docModule: string | null;
+  docSection: string | null;
   isView: boolean;
   primaryKey: string[] | null;
   score: number;
 };
 
+type FieldMatchCondition = { key: string; match: { value: string } };
+
 export async function searchTables(
   query: string,
   limit: number,
-  module?: string
+  filters?: { module?: string; docSection?: string }
 ): Promise<FusionTableHit[]> {
+  const must: FieldMatchCondition[] = [];
+  if (filters?.module) {
+    must.push({ key: "module", match: { value: filters.module } });
+  }
+  if (filters?.docSection) {
+    must.push({ key: "doc_section", match: { value: filters.docSection } });
+  }
+
   const vector = await embedQuery(query, TABLES_VECTOR_DIMENSIONS);
   const result = await getClient().query(TABLES_COLLECTION, {
-    filter: module
-      ? { must: [{ key: "module", match: { value: module } }] }
-      : undefined,
+    filter: must.length > 0 ? { must } : undefined,
     limit,
     query: vector,
     with_payload: [
       "table_name",
       "description",
       "module",
+      "doc_module",
+      "doc_section",
       "is_view",
       "primary_key",
     ],
@@ -90,6 +99,8 @@ export async function searchTables(
     const primaryKey = payload.primary_key as { columns?: string[] } | null;
     return {
       description: (payload.description as string) ?? null,
+      docModule: (payload.doc_module as string) ?? null,
+      docSection: (payload.doc_section as string) ?? null,
       isView: Boolean(payload.is_view),
       module: (payload.module as string) ?? null,
       primaryKey: primaryKey?.columns ?? null,
@@ -107,7 +118,7 @@ export type FusionColumn = {
   comment: string | null;
 };
 
-const MAX_COLUMNS_PER_TABLE = 300;
+const MAX_COLUMNS_PER_TABLE = 600;
 const COMMENT_TRUNCATE_LENGTH = 160;
 
 function truncateComment(comment: unknown): string | null {

@@ -24,6 +24,7 @@ import { getLanguageModel } from "@/lib/ai/providers";
 import { createDocument } from "@/lib/ai/tools/create-document";
 import { editDocument } from "@/lib/ai/tools/edit-document";
 import { getFusionTableColumns } from "@/lib/ai/tools/get-fusion-table-columns";
+import { listFusionDomains } from "@/lib/ai/tools/list-fusion-domains";
 import { requestSuggestions } from "@/lib/ai/tools/request-suggestions";
 import { searchFusionColumns } from "@/lib/ai/tools/search-fusion-columns";
 import { searchFusionTables } from "@/lib/ai/tools/search-fusion-tables";
@@ -80,8 +81,14 @@ export async function POST(request: Request) {
   }
 
   try {
-    const { id, message, messages, selectedChatModel, selectedVisibilityType } =
-      requestBody;
+    const {
+      id,
+      message,
+      messages,
+      schemaSearchEnabled,
+      selectedChatModel,
+      selectedVisibilityType,
+    } = requestBody;
 
     const [botIdResult, session] = await Promise.all([
       checkBotId().catch(() => null),
@@ -255,13 +262,15 @@ export async function POST(request: Request) {
           clearHealthCheckTimer();
         };
 
-        const schemaToolNames = isSchemaSearchEnabled()
-          ? ([
-              "searchFusionTables",
-              "getFusionTableColumns",
-              "searchFusionColumns",
-            ] as const)
-          : [];
+        const schemaToolNames =
+          schemaSearchEnabled !== false && isSchemaSearchEnabled()
+            ? ([
+                "listFusionDomains",
+                "searchFusionTables",
+                "getFusionTableColumns",
+                "searchFusionColumns",
+              ] as const)
+            : [];
 
         const result = streamText({
           activeTools:
@@ -291,7 +300,7 @@ export async function POST(request: Request) {
           onError() {
             stopWaitingStatus();
           },
-          stopWhen: isStepCount(8),
+          stopWhen: isStepCount(12),
           telemetry: {
             functionId: "stream-text",
             isEnabled: isProductionEnvironment,
@@ -304,6 +313,7 @@ export async function POST(request: Request) {
             }),
             editDocument: editDocument({ dataStream, session }),
             getFusionTableColumns,
+            listFusionDomains,
             requestSuggestions: requestSuggestions({
               dataStream,
               modelId: chatModel,

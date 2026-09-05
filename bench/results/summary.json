@@ -1,0 +1,323 @@
+{
+  "perModel": {
+    "claude-opus-5": {
+      "columnsChecked": 168,
+      "columnsValid": 167,
+      "costUsd": 5.7498000000000005,
+      "elapsedSec": 245,
+      "errors": 0,
+      "inputTokens": 1050965,
+      "outputTokens": 19797,
+      "runs": 5,
+      "tablesChecked": 33,
+      "tablesValid": 33,
+      "toolCalls": 28
+    },
+    "claude-sonnet-5": {
+      "columnsChecked": 115,
+      "columnsValid": 115,
+      "costUsd": 2.9042,
+      "elapsedSec": 254,
+      "errors": 0,
+      "inputTokens": 1348736,
+      "outputTokens": 20677,
+      "runs": 5,
+      "tablesChecked": 32,
+      "tablesValid": 31,
+      "toolCalls": 37
+    },
+    "claude-haiku-4-5": {
+      "columnsChecked": 77,
+      "columnsValid": 73,
+      "costUsd": 0.7055000000000001,
+      "elapsedSec": 117,
+      "errors": 0,
+      "inputTokens": 664754,
+      "outputTokens": 8121,
+      "runs": 5,
+      "tablesChecked": 23,
+      "tablesValid": 22,
+      "toolCalls": 38
+    }
+  },
+  "rows": [
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 39,
+      "columnsValid": 39,
+      "costUsd": 1.6141,
+      "elapsedSec": 55,
+      "inputTokens": 300302,
+      "modelId": "claude-opus-5",
+      "outputTokens": 4504,
+      "questionId": "fin-proc-po-invoice-match",
+      "status": "ok",
+      "tablesChecked": 8,
+      "tablesValid": 8,
+      "toolCalls": 4
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 39,
+      "columnsValid": 39,
+      "costUsd": 0.809,
+      "elapsedSec": 34,
+      "inputTokens": 148136,
+      "modelId": "claude-opus-5",
+      "outputTokens": 2731,
+      "questionId": "hcm-active-emps",
+      "status": "ok",
+      "tablesChecked": 7,
+      "tablesValid": 7,
+      "toolCalls": 5
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 32,
+      "columnsValid": 32,
+      "costUsd": 1.3107,
+      "elapsedSec": 63,
+      "inputTokens": 237370,
+      "modelId": "claude-opus-5",
+      "outputTokens": 4953,
+      "questionId": "ppm-fin-project-costs",
+      "status": "ok",
+      "tablesChecked": 8,
+      "tablesValid": 8,
+      "toolCalls": 7
+    },
+    {
+      "badColumns": [
+        {
+          "columnName": "__DUMMY__",
+          "exists": false,
+          "tableName": "RCV_SHIPMENT_LINES"
+        }
+      ],
+      "badTables": [],
+      "columnsChecked": 40,
+      "columnsValid": 39,
+      "costUsd": 1.7279,
+      "elapsedSec": 68,
+      "inputTokens": 317484,
+      "modelId": "claude-opus-5",
+      "outputTokens": 5618,
+      "questionId": "scm-proc-receipts",
+      "status": "ok",
+      "tablesChecked": 7,
+      "tablesValid": 7,
+      "toolCalls": 9
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 18,
+      "columnsValid": 18,
+      "costUsd": 0.2881,
+      "elapsedSec": 25,
+      "inputTokens": 47673,
+      "modelId": "claude-opus-5",
+      "outputTokens": 1991,
+      "questionId": "cx-fin-ar-balances",
+      "status": "ok",
+      "tablesChecked": 3,
+      "tablesValid": 3,
+      "toolCalls": 3
+    },
+    {
+      "badColumns": [],
+      "badTables": [
+        {
+          "exists": false,
+          "tableName": "ITS"
+        }
+      ],
+      "columnsChecked": 26,
+      "columnsValid": 26,
+      "costUsd": 1.1115,
+      "elapsedSec": 81,
+      "inputTokens": 523353,
+      "modelId": "claude-sonnet-5",
+      "outputTokens": 6482,
+      "questionId": "fin-proc-po-invoice-match",
+      "status": "ok",
+      "tablesChecked": 9,
+      "tablesValid": 8,
+      "toolCalls": 11
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 37,
+      "columnsValid": 37,
+      "costUsd": 0.6171,
+      "elapsedSec": 44,
+      "inputTokens": 288920,
+      "modelId": "claude-sonnet-5",
+      "outputTokens": 3931,
+      "questionId": "hcm-active-emps",
+      "status": "ok",
+      "tablesChecked": 8,
+      "tablesValid": 8,
+      "toolCalls": 9
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 20,
+      "columnsValid": 20,
+      "costUsd": 0.4321,
+      "elapsedSec": 65,
+      "inputTokens": 188308,
+      "modelId": "claude-sonnet-5",
+      "outputTokens": 5546,
+      "questionId": "ppm-fin-project-costs",
+      "status": "ok",
+      "tablesChecked": 7,
+      "tablesValid": 7,
+      "toolCalls": 8
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 20,
+      "columnsValid": 20,
+      "costUsd": 0.6318,
+      "elapsedSec": 43,
+      "inputTokens": 300040,
+      "modelId": "claude-sonnet-5",
+      "outputTokens": 3173,
+      "questionId": "scm-proc-receipts",
+      "status": "ok",
+      "tablesChecked": 5,
+      "tablesValid": 5,
+      "toolCalls": 6
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 12,
+      "columnsValid": 12,
+      "costUsd": 0.1117,
+      "elapsedSec": 21,
+      "inputTokens": 48115,
+      "modelId": "claude-sonnet-5",
+      "outputTokens": 1545,
+      "questionId": "cx-fin-ar-balances",
+      "status": "ok",
+      "tablesChecked": 3,
+      "tablesValid": 3,
+      "toolCalls": 3
+    },
+    {
+      "badColumns": [
+        {
+          "columnName": "FIRST_NAME",
+          "exists": false,
+          "tableName": "PER_ALL_PEOPLE_F"
+        },
+        {
+          "columnName": "LAST_NAME",
+          "exists": false,
+          "tableName": "PER_ALL_PEOPLE_F"
+        }
+      ],
+      "badTables": [
+        {
+          "exists": false,
+          "tableName": "HR_EMPLOYEES"
+        }
+      ],
+      "columnsChecked": 26,
+      "columnsValid": 24,
+      "costUsd": 0.2619,
+      "elapsedSec": 41,
+      "inputTokens": 245211,
+      "modelId": "claude-haiku-4-5",
+      "outputTokens": 3329,
+      "questionId": "fin-proc-po-invoice-match",
+      "status": "ok",
+      "tablesChecked": 8,
+      "tablesValid": 7,
+      "toolCalls": 10
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 0,
+      "columnsValid": 0,
+      "costUsd": 0.1419,
+      "elapsedSec": 17,
+      "inputTokens": 137484,
+      "modelId": "claude-haiku-4-5",
+      "outputTokens": 887,
+      "questionId": "hcm-active-emps",
+      "status": "ok",
+      "tablesChecked": 0,
+      "tablesValid": 0,
+      "toolCalls": 10
+    },
+    {
+      "badColumns": [
+        {
+          "columnName": "PROJECT_NAME",
+          "exists": false,
+          "tableName": "PJF_PROJECTS_ALL_TL"
+        },
+        {
+          "columnName": "EXPENDITURE_TYPE_ID",
+          "exists": false,
+          "tableName": "PJS_FP_BASE_FIN"
+        }
+      ],
+      "badTables": [],
+      "columnsChecked": 22,
+      "columnsValid": 20,
+      "costUsd": 0.13,
+      "elapsedSec": 30,
+      "inputTokens": 119907,
+      "modelId": "claude-haiku-4-5",
+      "outputTokens": 2012,
+      "questionId": "ppm-fin-project-costs",
+      "status": "ok",
+      "tablesChecked": 6,
+      "tablesValid": 6,
+      "toolCalls": 9
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 17,
+      "columnsValid": 17,
+      "costUsd": 0.1206,
+      "elapsedSec": 15,
+      "inputTokens": 116016,
+      "modelId": "claude-haiku-4-5",
+      "outputTokens": 910,
+      "questionId": "scm-proc-receipts",
+      "status": "ok",
+      "tablesChecked": 5,
+      "tablesValid": 5,
+      "toolCalls": 4
+    },
+    {
+      "badColumns": [],
+      "badTables": [],
+      "columnsChecked": 12,
+      "columnsValid": 12,
+      "costUsd": 0.0511,
+      "elapsedSec": 14,
+      "inputTokens": 46136,
+      "modelId": "claude-haiku-4-5",
+      "outputTokens": 983,
+      "questionId": "cx-fin-ar-balances",
+      "status": "ok",
+      "tablesChecked": 4,
+      "tablesValid": 4,
+      "toolCalls": 5
+    }
+  ]
+}

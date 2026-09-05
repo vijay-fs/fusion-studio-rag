@@ -56,6 +56,7 @@ import { Button } from "../ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { PaperclipIcon, StopIcon } from "./icons";
 import { PreviewAttachment } from "./preview-attachment";
+import { SchemaSearchToggle } from "./schema-search-toggle";
 import {
   type SlashCommand,
   SlashCommandMenu,
@@ -554,6 +555,7 @@ function PureMultimodalInput({
               onModelChange={onModelChange}
               selectedModelId={selectedModelId}
             />
+            <SchemaSearchToggle />
           </PromptInputTools>
 
           {status === "submitted" ? (

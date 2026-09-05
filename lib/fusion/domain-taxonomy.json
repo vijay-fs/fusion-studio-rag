@@ -1,0 +1,1004 @@
+[
+  {
+    "module": "financials",
+    "docModule": "accounting_hub",
+    "docSection": "subledger_accounting",
+    "tableCount": 134
+  },
+  {
+    "module": "erp",
+    "docModule": "accounting_hub",
+    "docSection": "subledger_accounting",
+    "tableCount": 72
+  },
+  {
+    "module": "common",
+    "docModule": "common",
+    "docSection": "application_toolkit",
+    "tableCount": 99
+  },
+  {
+    "module": "common",
+    "docModule": "common",
+    "docSection": "middleware_extensions_for_applications",
+    "tableCount": 774
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "advanced_collections",
+    "tableCount": 46
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "advanced_collections",
+    "tableCount": 19
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "assets",
+    "tableCount": 152
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "assets",
+    "tableCount": 60
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "bill_management",
+    "tableCount": 9
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "bill_management",
+    "tableCount": 3
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "budgetary_control",
+    "tableCount": 81
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "budgetary_control",
+    "tableCount": 38
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "cash_management",
+    "tableCount": 63
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "cash_management",
+    "tableCount": 77
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "expenses",
+    "tableCount": 130
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "expenses",
+    "tableCount": 4
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "financials_common_module",
+    "tableCount": 314
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "financials_common_module",
+    "tableCount": 91
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "financials_for_asia_pacific",
+    "tableCount": 38
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "financials_for_asia_pacific",
+    "tableCount": 17
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "financials_for_emea",
+    "tableCount": 31
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "financials_for_emea",
+    "tableCount": 5
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "financials_for_regional_localizations",
+    "tableCount": 34
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "financials_for_regional_localizations",
+    "tableCount": 16
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "financials_for_the_americas",
+    "tableCount": 8
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "financials_for_the_americas",
+    "tableCount": 57
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "general_ledger",
+    "tableCount": 127
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "general_ledger",
+    "tableCount": 167
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "joint_venture_management",
+    "tableCount": 63
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "joint_venture_management",
+    "tableCount": 35
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "legal_entity_configurator",
+    "tableCount": 8
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "legal_entity_configurator",
+    "tableCount": 14
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "oracle_fusion_u_s_federal_financials",
+    "tableCount": 67
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "oracle_fusion_u_s_federal_financials",
+    "tableCount": 56
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "payables",
+    "tableCount": 94
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "payables",
+    "tableCount": 55
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "payments",
+    "tableCount": 98
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "payments",
+    "tableCount": 158
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "receivables",
+    "tableCount": 133
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "receivables",
+    "tableCount": 227
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "revenue_management",
+    "tableCount": 71
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "revenue_management",
+    "tableCount": 135
+  },
+  {
+    "module": "financials",
+    "docModule": "financials",
+    "docSection": "tax",
+    "tableCount": 132
+  },
+  {
+    "module": "erp",
+    "docModule": "financials",
+    "docSection": "tax",
+    "tableCount": 61
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "absence_management",
+    "tableCount": 131
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "ai",
+    "tableCount": 109
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "benefits",
+    "tableCount": 359
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "celebrate",
+    "tableCount": 32
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "compensation",
+    "tableCount": 221
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "corporate_social_responsibility",
+    "tableCount": 64
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "fast_formula",
+    "tableCount": 40
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "global_human_resources",
+    "tableCount": 613
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "global_payroll",
+    "tableCount": 454
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "global_payroll_interface",
+    "tableCount": 44
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "hcm_common",
+    "tableCount": 298
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "hcm_configuration_workbench",
+    "tableCount": 20
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "hcm_extracts",
+    "tableCount": 28
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "questionnaire",
+    "tableCount": 4
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "social_connection",
+    "tableCount": 1
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "time_and_labor",
+    "tableCount": 35
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "touchpoints",
+    "tableCount": 7
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "work_life",
+    "tableCount": 250
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_directory_management",
+    "tableCount": 3
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_health_and_safety_incidents",
+    "tableCount": 82
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_management",
+    "tableCount": 195
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_modeling",
+    "tableCount": 3
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_predictions",
+    "tableCount": 15
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_reputation_management",
+    "tableCount": 280
+  },
+  {
+    "module": "hcm",
+    "docModule": "human_resources",
+    "docSection": "workforce_scheduling",
+    "tableCount": 123
+  },
+  {
+    "module": "scm",
+    "docModule": "logistics",
+    "docSection": "shipping",
+    "tableCount": 41
+  },
+  {
+    "module": "scm",
+    "docModule": "order_management",
+    "docSection": "order_management",
+    "tableCount": 211
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "purchasing",
+    "tableCount": 79
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "purchasing",
+    "tableCount": 22
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "self_service_procurement",
+    "tableCount": 77
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "self_service_procurement",
+    "tableCount": 6
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "sourcing",
+    "tableCount": 99
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "sourcing",
+    "tableCount": 22
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "spend_classification",
+    "tableCount": 4
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "spend_classification",
+    "tableCount": 51
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "supplier_model",
+    "tableCount": 68
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "supplier_model",
+    "tableCount": 26
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "supplier_portal",
+    "tableCount": 2
+  },
+  {
+    "module": "procurement",
+    "docModule": "procurement",
+    "docSection": "supplier_qualification",
+    "tableCount": 57
+  },
+  {
+    "module": "erp",
+    "docModule": "procurement",
+    "docSection": "supplier_qualification",
+    "tableCount": 2
+  },
+  {
+    "module": "scm",
+    "docModule": "product_lifecycle_management",
+    "docSection": "product_hub",
+    "tableCount": 32
+  },
+  {
+    "module": "scm",
+    "docModule": "product_lifecycle_management",
+    "docSection": "product_hub_portal",
+    "tableCount": 2
+  },
+  {
+    "module": "scm",
+    "docModule": "product_lifecycle_management",
+    "docSection": "product_lifecycle_portfolio_management",
+    "tableCount": 21
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "grants_management",
+    "tableCount": 67
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "grants_management",
+    "tableCount": 43
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_billing",
+    "tableCount": 65
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_billing",
+    "tableCount": 19
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_collaboration",
+    "tableCount": 2
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_control",
+    "tableCount": 20
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_control",
+    "tableCount": 45
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_costing",
+    "tableCount": 73
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_costing",
+    "tableCount": 12
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_foundation",
+    "tableCount": 186
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_foundation",
+    "tableCount": 24
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_management",
+    "tableCount": 89
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_management",
+    "tableCount": 8
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_management_control",
+    "tableCount": 27
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_performance_reporting",
+    "tableCount": 172
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_performance_reporting",
+    "tableCount": 15
+  },
+  {
+    "module": "project_management",
+    "docModule": "project_management",
+    "docSection": "project_resource_management",
+    "tableCount": 39
+  },
+  {
+    "module": "erp",
+    "docModule": "project_management",
+    "docSection": "project_resource_management",
+    "tableCount": 5
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "applications_common_components",
+    "tableCount": 15
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "catalog_price_books_products_and_promotions",
+    "tableCount": 16
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "common_crm",
+    "tableCount": 62
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "contracts",
+    "tableCount": 69
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "customer_data_hub",
+    "tableCount": 5
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "customer_data_model",
+    "tableCount": 81
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "customer_data_quality",
+    "tableCount": 10
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "field_service",
+    "tableCount": 25
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "incentive_compensation",
+    "tableCount": 81
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "knowledge",
+    "tableCount": 4
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "lead_management",
+    "tableCount": 17
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "marketing_campaigns",
+    "tableCount": 30
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "opportunity_management",
+    "tableCount": 17
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "partner_management",
+    "tableCount": 22
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "sales_for_communications",
+    "tableCount": 34
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "sales_for_consumer_goods_retail_execution",
+    "tableCount": 15
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "sales_forecasting",
+    "tableCount": 5
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "service_request_management",
+    "tableCount": 127
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "subscription_management",
+    "tableCount": 24
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "territory_management",
+    "tableCount": 24
+  },
+  {
+    "module": "cx",
+    "docModule": "sales",
+    "docSection": "work_management",
+    "tableCount": 29
+  },
+  {
+    "module": "scm",
+    "docModule": "service_logistics",
+    "docSection": "service_logistics",
+    "tableCount": 32
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "asset_tracking",
+    "tableCount": 101
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "channel_revenue_management",
+    "tableCount": 80
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "collaboration_messaging_framework",
+    "tableCount": 63
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "common_work_execution",
+    "tableCount": 106
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "common_work_setup",
+    "tableCount": 95
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "configurator",
+    "tableCount": 85
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "configure_to_order",
+    "tableCount": 9
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "cost_management",
+    "tableCount": 679
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "e_signatures_and_e_records",
+    "tableCount": 12
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "fiscal_document_capture",
+    "tableCount": 62
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "inventory_management",
+    "tableCount": 230
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "landed_cost_management",
+    "tableCount": 72
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "maintenance_management",
+    "tableCount": 42
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "pricing",
+    "tableCount": 185
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "product_and_catalog_management",
+    "tableCount": 148
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "product_concept_design",
+    "tableCount": 50
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "product_development",
+    "tableCount": 91
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "product_model",
+    "tableCount": 189
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "product_requirements_and_ideation_management",
+    "tableCount": 24
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "production_scheduling",
+    "tableCount": 67
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "quality_inspection_management",
+    "tableCount": 28
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "quality_issue_and_action_management",
+    "tableCount": 25
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "receipt_accounting",
+    "tableCount": 107
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "receiving",
+    "tableCount": 22
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "smart_operations",
+    "tableCount": 24
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_collaboration",
+    "tableCount": 79
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_financial_orchestration_foundation",
+    "tableCount": 41
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_healthcare",
+    "tableCount": 56
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_localizations",
+    "tableCount": 13
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_management_common_components",
+    "tableCount": 58
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "supply_chain_orchestration",
+    "tableCount": 31
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_execution",
+    "docSection": "sustainability",
+    "tableCount": 19
+  },
+  {
+    "module": "scm",
+    "docModule": "supply_chain_planning",
+    "docSection": "planning_common",
+    "tableCount": 812
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "career_development",
+    "tableCount": 4
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "goal_management",
+    "tableCount": 29
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "performance_management",
+    "tableCount": 61
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "profile_management",
+    "tableCount": 209
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "recruiting",
+    "tableCount": 555
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "succession_management",
+    "tableCount": 20
+  },
+  {
+    "module": "hcm",
+    "docModule": "talent_management",
+    "docSection": "talent_review",
+    "tableCount": 22
+  }
+]

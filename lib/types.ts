@@ -3,6 +3,7 @@ import { z } from "zod";
 import type { ArtifactKind } from "@/components/chat/artifact";
 import type { createDocument } from "./ai/tools/create-document";
 import type { getFusionTableColumns } from "./ai/tools/get-fusion-table-columns";
+import type { listFusionDomains } from "./ai/tools/list-fusion-domains";
 import type { requestSuggestions } from "./ai/tools/request-suggestions";
 import type { searchFusionColumns } from "./ai/tools/search-fusion-columns";
 import type { searchFusionTables } from "./ai/tools/search-fusion-tables";
@@ -15,6 +16,7 @@ export const messageMetadataSchema = z.object({
 
 export type MessageMetadata = z.infer<typeof messageMetadataSchema>;
 
+type listFusionDomainsTool = InferUITool<typeof listFusionDomains>;
 type searchFusionTablesTool = InferUITool<typeof searchFusionTables>;
 type getFusionTableColumnsTool = InferUITool<typeof getFusionTableColumns>;
 type searchFusionColumnsTool = InferUITool<typeof searchFusionColumns>;
@@ -25,6 +27,7 @@ type requestSuggestionsTool = InferUITool<
 >;
 
 export type ChatTools = {
+  listFusionDomains: listFusionDomainsTool;
   searchFusionTables: searchFusionTablesTool;
   getFusionTableColumns: getFusionTableColumnsTool;
   searchFusionColumns: searchFusionColumnsTool;

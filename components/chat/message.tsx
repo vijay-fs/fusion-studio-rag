@@ -145,6 +145,7 @@ const PurePreviewMessage = ({
     }
 
     if (
+      type === "tool-listFusionDomains" ||
       type === "tool-searchFusionTables" ||
       type === "tool-getFusionTableColumns" ||
       type === "tool-searchFusionColumns"
